@@ -42,13 +42,13 @@ public class AddressBookController {
     }
 
     /**
-     * 根据userId查询地址
-     * @param userId
+     * 根据id查询地址
+     * @param id
      * @return
      */
-    @GetMapping("/{userId}")
-    public Result getById(@PathVariable("userId") Long userId) {
-        AddressBook addressBook = addressBookService.getById(userId);
+    @GetMapping("/{id}")
+    public Result getById(@PathVariable("id") Long id) {
+        AddressBook addressBook = addressBookService.getById(id);
         return Result.success(addressBook);
     }
 

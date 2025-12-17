@@ -41,14 +41,13 @@ public class AddressBookServiceImpl implements AddressBookService {
     }
 
     /**
-     * 根据id查询
+     * 根据id查询地址
      *
      * @param id
      * @return
      */
     public AddressBook getById(Long id) {
-        AddressBook addressBook = addressBookMapper.getById(id);
-        return addressBook;
+        return addressBookMapper.getById(id);
     }
 
     /**
